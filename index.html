@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/578ffcca4c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <h1><b style="color: #ff004f;">S</b>achin</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>  
+        <div class="header-text">
+            <h1>Hi, I'm <b style="color: #ff004f;">Sachin O M</b> <br>from Shivamogga</h1>
+        </div>   
+    </div>
+   </div>
+
+<!--------------ABOUT-------------->
+
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Sachin-img.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Mechanical Graduate | 2023 <br>
+                    Open to new opportunities to work <br>Passionate about solving complex problems through <br> innovative technology solutions.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    <!-- <p class="tab-links"onclick="opentab('Project')">Project</p> -->
+                    <p class="tab-links"onclick="opentab('Internship')">Internship</p>
+                </div>
+                <div class="tab-contents active-tab" id="Education">
+                    <ul>
+                        <li><span>2023</span><br>University BDT College of Engineering -Davangere <br>MECH</li>
+                        <li><span>2019</span><br>Vikasa PU College -Shivamogga</li>
+                        <li><span>2017</span><br>Sri Vidya English Medium High School -Shivamogga</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Internship">
+                    <h1><b style="color: #b54769;"> JIT Technologies Bangalore </b></h1>
+                    <p>Completed One month Internship on Manufacturing and Quality Department of Press shop,CNC Division & Tool Room at JIT Technologies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </div>
+
+   <!-- -----------------Skills-------------- -->
+
+   <div id="skills">
+        <div class="container">
+            <h1 class="sub-title font1" >My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <img width="144" height="144" src="https://img.icons8.com/color/144/000000/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
+                    <h2>Core Java</h2>
+                    <p>Basics of Java <br> OOPS Concepts <br> Arrays and Strings</p>
+                    <p></p>
+                </div>
+                <div>
+                    <img width="144" height="144" src="https://img.icons8.com/color/96/000000/code.png" alt="code"/>
+                    <h2>Web Development</h2>
+                    <p>HTML <br> CSS <br> Java Script</p>
+                </div>
+                <div>
+                    <img width="144" height="144" src="https://img.icons8.com/fluency/96/database--v1.png" alt="database--v1"/>
+                    <h2>DBMS</h2>
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </div>
+   </div>
+
+<!-- ------------------PROJECTS----------------- -->
+
+   <div id="projects">
+        <div class="container">
+            <h1 class="sub-title font1">My Projects</h1>
+            <div class="projects-list">
+                <div class="projects">
+                    <img src="images/image-1.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping Website</h3>
+                        <p>"Discover Shopping: Showcased online shopping project developed using HTML and CSS!"</p>
+                        <a href="https://github.com/sachinom2001/Online-Shopping/tree/e6d9818d8440126b2686f7539b7231c5c609a13c"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <!-- <img src="images/image-2.png"> -->
+                    <div >
+                        <!-- <h3>Heading 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, temporibus!</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                    </div>
+                </div>
+                <div class="projects">
+                    <!-- <img src="images/image-3.png"> -->
+                    <div >
+                        <!-- <h3>Heading 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, temporibus!</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/sachinom2001" class="btn">See more</a>
+        </div>
+   </div>
+
+<!-- -------------------CONTACT-------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><a href="mailto:sachinom2001@gmail.com"><i class="fa-solid fa-envelope" ></i>sachinom2001@gmail.com</a> </p>
+                <p><a href="tel:9980720893"><i class="fa-solid fa-phone" ></i>9980720893</a> </p>
+                <div class="social-icons">
+                    <a href="https://github.com/sachinom2001"><i class="fa-brands fa-github" ></i></a>
+                    <a href="https://instagram.com/sachin_o_m?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram" ></i></a>
+                    <a href="https://www.linkedin.com/in/sachin-o-m-"><i class="fa-brands fa-linkedin" ></i></a>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="copyright">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div> -->
+</div>
+
+   <script>
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+   </script>
+
+   <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+
+
+   </script>
+
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwfiKk0C31XV_UMMClYym9tX3z1sheoY38ATtEDCL6blsDG78vS2yHjzAt5NNvUkO-CoA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000) 
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
